@@ -214,7 +214,7 @@ class NyotaliadexBot(commands.Bot):
         self.spawn_message_channel: discord.TextChannel | None = None
         self.caught_by: set[int] = set()
         self.collections: dict[str, set[str]] = self.load_collections()
-        self.pending_trades: dict[int, dict[str, Any]]] = {}
+        self.pending_trades: dict[int, dict[str, Any]] = {}
         self.state_lock = asyncio.Lock()
         self.spawn_task:asyncio.Task[None] | None = None
 
