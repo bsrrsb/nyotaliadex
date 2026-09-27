@@ -466,7 +466,7 @@ class NyotaliadexBot(commands.Bot):
             self.collections.setdefault(
                 user_key,
                 set(),
-            ).add(character["name"]]
+            ).add(character["name"])
 
             self.save_collections()
 
